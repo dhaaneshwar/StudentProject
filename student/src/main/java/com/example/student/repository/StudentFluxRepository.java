@@ -8,5 +8,5 @@ import reactor.core.publisher.Flux;
 
 @Repository
 public interface StudentFluxRepository extends ReactiveCrudRepository<Student,Long> {
-    Flux<Student> findByBranch(String reqBranch);
+//     Flux<Student> findByBranch(String reqBranch);
 }
