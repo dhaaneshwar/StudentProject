@@ -36,8 +36,7 @@ public class StudentFluxService {
 
     public Flux<Student> getStudentByBranch(String reqBranch) {
 
-        Flux<Student> students = repository.findByBranch(reqBranch);
-        return students;
+        return getAllStudent().filter(s->s.getBranch().equals(reqBranch));
 
     }
 }
